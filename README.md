@@ -1,12 +1,13 @@
-# senterrah-spec
-Senterrah Data Specification
+
+
+##Senterrah Data Specification
 
 Senterrah provides premium, human-written datasets for training advanced AI systems.
 This repository contains public schema definitions, sample formats, and integration examples used by ML teams evaluating Senterrah data.
 
 ⸻
 
-About
+##About
 
 Senterrah produces structured, high-fidelity human reasoning data, including:
 	•	Decision-making
@@ -20,7 +21,7 @@ All datasets are created by verified human writers and undergo multi-layer quali
 
 ⸻
 
-Schema
+##Schema
 
 Structured JSONL formats for:
 	•	Decision reasoning
@@ -32,14 +33,14 @@ Detailed schema files will be available in the schema/ directory.
 
 ⸻
 
-Sample Data
+##Sample Data
 
 The examples/ directory contains small, redacted sample snippets to demonstrate structure and metadata formatting.
 These examples are not full datasets and are provided for evaluation purposes only.
 
 ⸻
 
-Integration
+##Integration
 
 Example scripts to load and filter JSONL data will be available in docs/ and examples/.
 
