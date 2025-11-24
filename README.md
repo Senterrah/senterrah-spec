@@ -1,6 +1,6 @@
 
 
-##Senterrah Data Specification
+## Senterrah Data Specification
 
 Senterrah provides premium, human-written datasets for training advanced AI systems.
 This repository contains public schema definitions, sample formats, and integration examples used by ML teams evaluating Senterrah data.
