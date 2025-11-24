@@ -1,4 +1,8 @@
+<p align="center">
+  <img src="senterrahbanner.png" alt="Senterrah Banner" width="100%">
+</p>
 
+# senterrah-spec
 
 ## Senterrah Data Specification
 
