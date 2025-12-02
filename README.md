@@ -4,51 +4,61 @@
 
 
 
-## Senterrah Data Specification
+# Senterrah Data Specification
 
 Senterrah provides premium, human-written datasets for training advanced AI systems.
-This repository contains public schema definitions, sample formats, and integration examples used by ML teams evaluating Senterrah data.
 
+This repository documents:
 
+- Public schema definitions
+- Human-verification and quality controls
+- Metadata fields and reasoning structure
+- Links to small redacted samples and loaders
 
-## About
+If you want to see example records and loader code, see the companion repo:
+➡️ https://github.com/Senterrah/senterrah-samples
 
-Senterrah produces structured, high-fidelity human reasoning data, including:
-	•	Decision-making
-	•	Nonlinear thought patterns
-	•	Emotional reasoning
-	•	Explanations at multiple cognitive levels
-	•	Interpersonal dynamics
-	•	Human error + correction sequences
+---
 
-All datasets are created by verified human writers and undergo multi-layer quality review.
+## What Senterrah Data Is
 
+Senterrah focuses on **high-fidelity human reasoning data**, including:
 
+- Decision-making under uncertainty
+- Non-linear / “messy” human thought patterns
+- Emotional and interpersonal reasoning
+- Explanations at multiple cognitive levels
+- Human error → reflection → correction sequences
 
-## Schema
+All production datasets are:
 
-Structured JSONL formats for:
-	•	Decision reasoning
-	•	Multi-step explanations
-	•	Human interactions
-	•	Meta-cognitive reflections
+- Written exclusively by **verified human writers**
+- Screened to **exclude synthetic / AI-generated text**
+- Passed through a **multi-layer quality review pipeline**
 
-Detailed schema files will be available in the schema/ directory.
+Details:
+- [Human Verification](./HUMAN_VERIFICATION.md)
+- [Quality & Review Pipeline](./QUALITY_PIPELINE.md)
+- [Metadata & Schema](./METADATA_SCHEMA.md)
 
+---
 
+## High-Level Schema
 
-## Sample Data
+A typical **decision record** contains:
 
-The examples/ directory contains small, redacted sample snippets to demonstrate structure and metadata formatting.
-These examples are not full datasets and are provided for evaluation purposes only.
+- `id` – unique record ID
+- `title` – short natural-language summary
+- `body` – original human-written narrative
+- `category` – decision / interaction type
+- `word_count`, `paragraph_count`
+- `language`
+- `emotions`, `emotion_intensity`
+- `conflict_type`
+- `options`, `criteria`
+- `reasoning_structure`, `reasoning_steps`
+- `emotional_weight`, `logical_weight`
+- `certainty`
 
-
-
-## Integration
-
-Example scripts to load and filter JSONL data will be available in docs/ and examples/.
-
-
-
-For full access to production datasets, enterprise partnerships, or custom dataset requests, contact:
-contact@senterrah.com
+For full field definitions and types, see:
+- [Metadata & Schema](./METADATA_SCHEMA.md)
